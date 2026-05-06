@@ -1,5 +1,12 @@
 /* add styles here */
-.page {
+:root {
+    --search-bar-height: 70px;
+    --background-size: 19px;
+    --background-left-offset: 26px;
+    --horizontal-padding: 62px;
+}
+
+body {
     margin: 0;
 }
 
@@ -8,9 +15,30 @@
 }
 
 .form__search-bar {
+    box-sizing: border-box;
+    border-width: 1px;
     width: 100%;
+    font-size: inherit;
     background-image: url(images/Search.svg);
     background-repeat: no-repeat;
-    background-position: 1% center;
-    padding: 1.2em 3em;
+}
+
+.form__search-bar--big {
+    --scale: 1;
+}
+
+.form__search-bar--small {
+    --scale: 0.6;
+}
+
+.form__search-bar--big,
+.form__search-bar--small {
+    height: calc(var(--search-bar-height) * var(--scale));
+    background-size: calc(var(--background-size) * var(--scale));
+    background-position: calc(var(--background-left-offset) * var(--scale)) center;
+    padding: 0 calc(var(--horizontal-padding) * var(--scale));
+}
+
+.form__search-bar--small::placeholder {
+    font-size: 0.88rem;
 }
