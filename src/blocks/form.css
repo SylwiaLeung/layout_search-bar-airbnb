@@ -1,51 +1,51 @@
 .form__search-bar {
-    box-sizing: border-box;
-    border: 1px solid rgba(225, 231, 237, 1);
-    border-radius: 4px;
-    box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
-    width: 100%;
-    font-size: inherit;
-    font-family: Avenir, sans-serif;
-    background-image: url(images/Search.svg);
-    background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: 1px solid rgba(225, 231, 237, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  width: 100%;
+  font-size: inherit;
+  font-family: Avenir, sans-serif;
+  background-image: url(../images/Search.svg);
+  background-repeat: no-repeat;
 }
 
 .form__search-bar--big {
-    --scale: 1;
+  --scale: 1;
 }
 
 .form__search-bar--small {
-    --scale: 0.6;
+  --scale: 0.6;
 
-    font-size: 0.88rem;
-    text-shadow: 0 4 4 0 rgba(0, 0, 0, 0.25);
+  font-size: 0.88rem;
+  text-shadow: 0 4 4 0 rgba(0, 0, 0, 0.25);
 }
 
 .form__search-bar--big,
 .form__search-bar--small {
-    height: calc(var(--search-bar-height) * var(--scale));
-    background-size: calc(var(--background-size) * var(--scale));
-    background-position: calc(var(--background-left-offset) * var(--scale)) center;
-    padding: 0 calc(var(--horizontal-padding) * var(--scale));
+  height: calc(var(--search-bar-height) * var(--scale));
+  background-size: calc(var(--background-size) * var(--scale));
+  background-position: calc(var(--background-left-offset) * var(--scale)) center;
+  padding: 0 calc(var(--horizontal-padding) * var(--scale));
 }
 
 .form__search-bar--big:hover,
 .form__search-bar--small:hover {
-    box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
+  box-shadow: 0 3px 8px 0 rgba(61, 78, 97, 0.2);
 }
 
 .form__search-bar--small:hover,
 .form__search-bar--small:focus {
-    text-shadow: none;
+  text-shadow: none;
 }
 
 .form__search-bar--big:focus,
 .form__search-bar--small:focus {
-    font-family: Avenir, sans-serif;
-    font-weight: 900;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
 }
 
 .form__search-bar--big:focus {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
