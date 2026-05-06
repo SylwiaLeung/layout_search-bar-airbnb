@@ -16,14 +16,15 @@
       href="style.css"
     />
   </head>
-  <body>
+  <body class="page">
     <form
       action="GET"
       data-qa="big"
-      class="form"
+      class="form page__form"
     >
       <input
         type="text"
+        name="search-bar-big"
         data-qa="keypress"
         placeholder="Try “Los Angeles“"
         class="form__search-bar form__search-bar--big"
@@ -33,10 +34,11 @@
     <form
       action="GET"
       data-qa="small"
-      class="form"
+      class="form page__form"
     >
       <input
         type="text"
+        name="search-bar-small"
         data-qa="hover"
         placeholder="Try “Los Angeles“"
         class="form__search-bar form__search-bar--small"
