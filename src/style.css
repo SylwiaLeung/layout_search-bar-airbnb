@@ -1,1 +1,16 @@
 /* add styles here */
+.page {
+    margin: 0;
+}
+
+.page__form {
+    margin-top: 20px;
+}
+
+.form__search-bar {
+    width: 100%;
+    background-image: url(images/Search.svg);
+    background-repeat: no-repeat;
+    background-position: 1% center;
+    padding: 1.2em 3em;
+}
