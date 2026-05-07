@@ -1,3 +1,8 @@
+.form {
+  margin-top: var(--vertical-gap);
+  margin-bottom: var(--vertical-gap);
+}
+
 .form__search-bar {
   box-sizing: border-box;
   border: 1px solid var(--border-colour);
@@ -39,9 +44,10 @@
 
 .form__search-bar--big:focus {
   text-shadow: 0 4px 4px var(--shadow-colour-light-opacity-20);
-  background-image: url(../images/Search.svg),
-    var(--background-gradient-focus);
-  background-size: var(--background-size-big), 100% 100%;
+  background-image: url(../images/Search.svg), var(--background-gradient-focus);
+  background-size:
+    var(--background-size-big),
+    100% 100%;
 }
 
 .form__search-bar--small:hover {
@@ -50,8 +56,7 @@
 
 .form__search-bar--small:focus {
   box-shadow: none;
-  background-image: url(../images/Search.svg),
-    var(--background-gradient-focus);
+  background-image: url(../images/Search.svg), var(--background-gradient-focus);
   background-size:
     var(--background-size-small),
     100% 100%;
